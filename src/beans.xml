@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<bean id="emp" class="com.boa.training.spring.Employee"    autowire="byType" scope="prototype">
+<property name="empId"  value="1001"></property>
+<property name="empName" value="Arvind"></property>
+<property name="designation" value="Developer"></property>
+</bean>
+
+<bean id="address1" class="com.boa.training.spring.Address">
+<property name="location" value="Hebbal"></property>
+<property name="city" value="Bangalore"></property>
+</bean>
+
+</beans>
